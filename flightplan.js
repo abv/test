@@ -26,7 +26,7 @@ var tmpDir = 'app-' + new Date().getTime();
  
 // run commands on localhost 
 plan.local(function(local) {
-  local.exec('whoami');
+  // local.exec('whoami');
   // local.log('Run build');
   // local.exec('gulp build');
 
@@ -48,10 +48,5 @@ plan.remote(function(remote) {
  
   remote.log('Reload application');
   remote.sudo('ln -snf ~/' + tmpDir + ' ~/app-current', {user: 'app'});
-  remote.sudo('pm2 reload all', {user: 'www'});
+  remote.sudo('pm2 reload app-current/processes.json', {user: 'app'});
 });
- 
-// run more commands on localhost afterwards 
-// plan.local(function(local) { /* ... */ });
-// ...or on remote hosts 
-// plan.remote(function(remote) { /* ... */ });

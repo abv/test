@@ -1,0 +1,40 @@
+{
+    "apps": [
+        {
+            "name": "app-1",
+            "script": "index.js",
+            "cwd": "/home/app/app-current",
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": "8001"
+            }
+        },
+        {
+            "name": "app-2",
+            "script": "index.js",
+            "cwd": "/home/app/app-current",
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": "8002"
+            }
+        },
+        {
+            "name": "app-3",
+            "script": "index.js",
+            "cwd": "/home/app/app-current",
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": "8003"
+            }
+        },
+        {
+            "name": "app-4",
+            "script": "index.js",
+            "cwd": "/home/app/app-current",
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": "8004"
+            }
+        }
+    ]
+}
