@@ -1,0 +1,6 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "flightplan": "^0.6.6"
+  }
+}
